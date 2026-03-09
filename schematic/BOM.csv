@@ -1,0 +1,20 @@
+Reference,Value,Footprint,Quantity,Description
+USB1,TYPE-C 16PIN 2MD(073),Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12,1,USB Type-C 16-pin SMD receptacle
+U2,MT3608,Package_TO_SOT_SMD:SOT-23-6,1,Boost DC-DC controller 2A internal switch
+U1,PT4205,Package_TO_SOT_SMD:SOT-89-5,1,Buck constant-current LED driver IC
+L2,10uH,Inductor_SMD:L_Bourns_SRR1260,1,Boost inductor 10uH >= 2A saturation current
+L1,47uH,Inductor_SMD:L_Bourns_SRR1260,1,Buck inductor 47uH >= 1A saturation current
+D2,SS14,Diode_SMD:D_SMA,1,Schottky diode 1A/40V - MT3608 boost freewheeling
+D1,SS14,Diode_SMD:D_SMA,1,Schottky diode 1A/40V - PT4205 buck freewheeling
+C4,22uF/25V,Capacitor_SMD:C_1206_3216Metric,1,MT3608 output filter capacitor
+C3,10uF/25V,Capacitor_SMD:C_0805_2012Metric,1,MT3608 input bypass capacitor
+C1,220uF/16V,Capacitor_THT:CP_Radial_D8.0mm_P3.50mm,1,PT4205 input filter electrolytic capacitor
+C2,220uF/16V,Capacitor_THT:CP_Radial_D8.0mm_P3.50mm,1,PT4205 input filter electrolytic capacitor
+R3,140k,Resistor_SMD:R_0402_1005Metric,1,MT3608 feedback top resistor (sets Vout=9V)
+R4,10k,Resistor_SMD:R_0402_1005Metric,1,MT3608 feedback bottom resistor (sets Vout=9V)
+R_CC1,5.1k,Resistor_SMD:R_0402_1005Metric,1,USB Type-C CC1 pull-down resistor
+R_CC2,5.1k,Resistor_SMD:R_0402_1005Metric,1,USB Type-C CC2 pull-down resistor
+R1,560m,Resistor_SMD:R_2512_6332Metric,1,PT4205 current sense resistor 560mOhm (parallel with R2)
+R2,560m,Resistor_SMD:R_2512_6332Metric,1,PT4205 current sense resistor 560mOhm (parallel with R1; R1||R2 = 280mOhm)
+J1,Conn_01x02,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,1,LED output connector OUT+/OUT-
+J2,Conn_01x02,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,1,DIM dimming control input connector
