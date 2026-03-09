@@ -1,0 +1,546 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (paper "A4")
+
+  (lib_symbols
+    (symbol "USB_C_Receptacle_USB2.0" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "USB" (at 0 11.43 0) (effects (font (size 1.27 1.27))))
+      (property "Value" "USB_C_Receptacle_USB2.0" (at 0 9.906 0) (effects (font (size 1.27 1.27))))
+      (property "Footprint" "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (symbol "USB_C_Receptacle_USB2.0_1_1"
+        (pin power_in "GND" (at -5.08 -7.62 0) (length 1.27) (name "GND" (effects (font (size 1.016 1.016)))) (number "1" (effects (font (size 1.016 1.016)))))
+        (pin power_in "GND" (at -5.08 -8.89 0) (length 1.27) (name "GND" (effects (font (size 1.016 1.016)))) (number "10" (effects (font (size 1.016 1.016)))))
+        (pin bidirectional "D-" (at -5.08 2.54 0) (length 1.27) (name "D-" (effects (font (size 1.016 1.016)))) (number "7" (effects (font (size 1.016 1.016)))))
+        (pin bidirectional "D+" (at -5.08 3.81 0) (length 1.27) (name "D+" (effects (font (size 1.016 1.016)))) (number "8" (effects (font (size 1.016 1.016)))))
+        (pin power_in "VBUS" (at -5.08 7.62 0) (length 1.27) (name "VBUS" (effects (font (size 1.016 1.016)))) (number "3" (effects (font (size 1.016 1.016)))))
+        (pin power_in "VBUS" (at -5.08 6.35 0) (length 1.27) (name "VBUS" (effects (font (size 1.016 1.016)))) (number "9" (effects (font (size 1.016 1.016)))))
+        (pin passive "CC1" (at -5.08 0 0) (length 1.27) (name "CC1" (effects (font (size 1.016 1.016)))) (number "4" (effects (font (size 1.016 1.016)))))
+        (pin passive "CC2" (at -5.08 -1.27 0) (length 1.27) (name "CC2" (effects (font (size 1.016 1.016)))) (number "11" (effects (font (size 1.016 1.016)))))
+        (pin passive "SHIELD" (at -5.08 -11.43 0) (length 1.27) (name "SHIELD" (effects (font (size 1.016 1.016)))) (number "S1" (effects (font (size 1.016 1.016)))))
+      )
+    )
+
+    (symbol "MT3608" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "U" (at 0 4.572 0) (effects (font (size 1.27 1.27))))
+      (property "Value" "MT3608" (at 0 3.048 0) (effects (font (size 1.27 1.27))))
+      (property "Footprint" "Package_TO_SOT_SMD:SOT-23-6" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (symbol "MT3608_1_1"
+        (rectangle (start -3.81 2.54) (end 3.81 -5.08) (stroke (width 0.254) (type default)) (fill (type background)))
+        (pin output "SW" (at -6.35 1.27 0) (length 2.54) (name "SW" (effects (font (size 1.016 1.016)))) (number "1" (effects (font (size 1.016 1.016)))))
+        (pin power_in "GND" (at 0 -7.62 90) (length 2.54) (name "GND" (effects (font (size 1.016 1.016)))) (number "2" (effects (font (size 1.016 1.016)))))
+        (pin input "FB" (at 6.35 -1.27 180) (length 2.54) (name "FB" (effects (font (size 1.016 1.016)))) (number "3" (effects (font (size 1.016 1.016)))))
+        (pin input "EN" (at 6.35 1.27 180) (length 2.54) (name "EN" (effects (font (size 1.016 1.016)))) (number "4" (effects (font (size 1.016 1.016)))))
+        (pin power_in "IN" (at -6.35 -1.27 0) (length 2.54) (name "IN" (effects (font (size 1.016 1.016)))) (number "5" (effects (font (size 1.016 1.016)))))
+        (pin no_connect "NC" (at 6.35 -3.81 180) (length 2.54) (name "NC" (effects (font (size 1.016 1.016)))) (number "6" (effects (font (size 1.016 1.016)))))
+      )
+    )
+
+    (symbol "PT4205" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "U" (at 0 4.572 0) (effects (font (size 1.27 1.27))))
+      (property "Value" "PT4205" (at 0 3.048 0) (effects (font (size 1.27 1.27))))
+      (property "Footprint" "Package_TO_SOT_SMD:SOT-89-5" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (symbol "PT4205_1_1"
+        (rectangle (start -3.81 2.54) (end 3.81 -6.35) (stroke (width 0.254) (type default)) (fill (type background)))
+        (pin output "SW" (at -6.35 1.27 0) (length 2.54) (name "SW" (effects (font (size 1.016 1.016)))) (number "1" (effects (font (size 1.016 1.016)))))
+        (pin power_in "GND" (at 0 -8.89 90) (length 2.54) (name "GND" (effects (font (size 1.016 1.016)))) (number "2" (effects (font (size 1.016 1.016)))))
+        (pin input "DIM" (at 6.35 -1.27 180) (length 2.54) (name "DIM" (effects (font (size 1.016 1.016)))) (number "3" (effects (font (size 1.016 1.016)))))
+        (pin input "CSN" (at 6.35 1.27 180) (length 2.54) (name "CSN" (effects (font (size 1.016 1.016)))) (number "4" (effects (font (size 1.016 1.016)))))
+        (pin power_in "VIN" (at -6.35 -1.27 0) (length 2.54) (name "VIN" (effects (font (size 1.016 1.016)))) (number "5" (effects (font (size 1.016 1.016)))))
+      )
+    )
+
+    (symbol "Device:R" (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "R" (at 1.524 0 90) (effects (font (size 1.27 1.27))))
+      (property "Value" "R" (at -1.524 0 90) (effects (font (size 1.27 1.27))))
+      (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (symbol "Device:R_1_1"
+        (rectangle (start -1.016 -2.54) (end 1.016 2.54) (stroke (width 0.254) (type default)) (fill (type background)))
+        (pin passive "~" (at 0 3.81 270) (length 1.27) (number "1" (effects (font (size 1.016 1.016)))) (name "~" (effects (font (size 1.016 1.016)))))
+        (pin passive "~" (at 0 -3.81 90) (length 1.27) (number "2" (effects (font (size 1.016 1.016)))) (name "~" (effects (font (size 1.016 1.016)))))
+      )
+    )
+
+    (symbol "Device:C" (pin_names (offset 0.254) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "C" (at 1.651 0 90) (effects (font (size 1.27 1.27))))
+      (property "Value" "C" (at -1.651 0 90) (effects (font (size 1.27 1.27))))
+      (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (symbol "Device:C_1_1"
+        (polyline (pts (xy -2.032 0.762) (xy 2.032 0.762)) (stroke (width 0.508) (type default)) (fill (type none)))
+        (polyline (pts (xy -2.032 -0.762) (xy 2.032 -0.762)) (stroke (width 0.508) (type default)) (fill (type none)))
+        (pin passive "~" (at 0 2.54 270) (length 1.778) (number "1" (effects (font (size 1.016 1.016)))) (name "~" (effects (font (size 1.016 1.016)))))
+        (pin passive "~" (at 0 -2.54 90) (length 1.778) (number "2" (effects (font (size 1.016 1.016)))) (name "~" (effects (font (size 1.016 1.016)))))
+      )
+    )
+
+    (symbol "Device:L" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "L" (at 0 2.794 0) (effects (font (size 1.27 1.27))))
+      (property "Value" "L" (at 0 -2.794 0) (effects (font (size 1.27 1.27))))
+      (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (symbol "Device:L_1_1"
+        (arc (start 0 -1.778) (mid 0.889 -1.016) (end 0 -0.254) (stroke (width 0.254) (type default)) (fill (type none)))
+        (arc (start 0 -0.254) (mid 0.889 0.508) (end 0 1.27) (stroke (width 0.254) (type default)) (fill (type none)))
+        (arc (start 0 1.27) (mid 0.889 2.032) (end 0 2.794) (stroke (width 0.254) (type default)) (fill (type none)))
+        (arc (start 0 -3.302) (mid 0.889 -2.54) (end 0 -1.778) (stroke (width 0.254) (type default)) (fill (type none)))
+        (pin passive "~" (at 0 3.81 270) (length 1.016) (number "1" (effects (font (size 1.016 1.016)))) (name "~" (effects (font (size 1.016 1.016)))))
+        (pin passive "~" (at 0 -3.81 90) (length 0.508) (number "2" (effects (font (size 1.016 1.016)))) (name "~" (effects (font (size 1.016 1.016)))))
+      )
+    )
+
+    (symbol "Device:D" (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "D" (at 0 2.54 0) (effects (font (size 1.27 1.27))))
+      (property "Value" "D" (at 0 -2.54 0) (effects (font (size 1.27 1.27))))
+      (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (symbol "Device:D_1_1"
+        (polyline (pts (xy -1.524 -1.016) (xy -1.524 1.016)) (stroke (width 0.254) (type default)) (fill (type none)))
+        (polyline (pts (xy -1.524 0) (xy 1.524 0)) (stroke (width 0.254) (type default)) (fill (type none)))
+        (polyline (pts (xy 1.524 -1.016) (xy -1.524 0) (xy 1.524 1.016) (xy 1.524 -1.016)) (stroke (width 0.254) (type default)) (fill (type background)))
+        (pin passive "A" (at -2.54 0 0) (length 1.016) (number "A" (effects (font (size 1.016 1.016)))) (name "A" (effects (font (size 1.016 1.016)))))
+        (pin passive "K" (at 2.54 0 180) (length 1.016) (number "K" (effects (font (size 1.016 1.016)))) (name "K" (effects (font (size 1.016 1.016)))))
+      )
+    )
+
+    (symbol "power:GND" (power) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "#PWR" (at 0 -1.905 0) (effects (font (size 1.27 1.27)) hide))
+      (property "Value" "GND" (at 0 -3.81 0) (effects (font (size 1.27 1.27))))
+      (symbol "power:GND_1_1"
+        (pin power_in "~" (at 0 0 270) (length 0) (number "1" (effects (font (size 1.016 1.016)))) (name "~" (effects (font (size 1.016 1.016)))))
+      )
+      (symbol "power:GND_0_1"
+        (polyline (pts (xy 0 0) (xy 0 -1.016)) (stroke (width 0) (type default)) (fill (type none)))
+        (polyline (pts (xy -1.016 -1.016) (xy 1.016 -1.016)) (stroke (width 0) (type default)) (fill (type none)))
+        (polyline (pts (xy -0.508 -1.524) (xy 0.508 -1.524)) (stroke (width 0) (type default)) (fill (type none)))
+        (polyline (pts (xy -0.254 -2.032) (xy 0.254 -2.032)) (stroke (width 0) (type default)) (fill (type none)))
+      )
+    )
+
+    (symbol "power:PWR_FLAG" (power) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "#FLG" (at 0 1.905 0) (effects (font (size 1.27 1.27)) hide))
+      (property "Value" "PWR_FLAG" (at 0 3.81 0) (effects (font (size 1.27 1.27))))
+      (symbol "power:PWR_FLAG_0_0"
+        (pin power_out "~" (at 0 0 90) (length 0) (number "1" (effects (font (size 1.016 1.016)))) (name "~" (effects (font (size 1.016 1.016)))))
+      )
+      (symbol "power:PWR_FLAG_0_1"
+        (polyline (pts (xy 0 0) (xy 0 1.016) (xy -1.016 1.778) (xy 1.016 1.778) (xy 0 1.016)) (stroke (width 0) (type default)) (fill (type none)))
+      )
+    )
+
+    (symbol "Connector:Conn_01x02_Pin" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "J" (at 0 2.794 0) (effects (font (size 1.27 1.27))))
+      (property "Value" "Conn_01x02_Pin" (at 0 -2.794 0) (effects (font (size 1.27 1.27))))
+      (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (symbol "Connector:Conn_01x02_Pin_1_1"
+        (rectangle (start -1.27 1.27) (end 1.27 -1.27) (stroke (width 0.254) (type default)) (fill (type background)))
+        (pin passive "Pin_1" (at -3.81 0.635 0) (length 2.54) (number "1" (effects (font (size 1.016 1.016)))) (name "Pin_1" (effects (font (size 1.016 1.016)))))
+        (pin passive "Pin_2" (at -3.81 -0.635 0) (length 2.54) (number "2" (effects (font (size 1.016 1.016)))) (name "Pin_2" (effects (font (size 1.016 1.016)))))
+      )
+    )
+  )
+
+  ;; ── Module A: USB Type-C Input ─────────────────────────────────────────────
+
+  (symbol (lib_id "USB_C_Receptacle_USB2.0") (at 25.4 38.1 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "a0000001-0000-0000-0000-000000000001")
+    (property "Reference" "USB1" (at 25.4 26.67 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "TYPE-C 16PIN 2MD(073)" (at 25.4 25.146 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "GND" (uuid "a0000001-0001-0000-0000-000000000001"))
+    (pin "GND" (uuid "a0000001-0001-0000-0000-000000000002"))
+    (pin "D-" (uuid "a0000001-0001-0000-0000-000000000003"))
+    (pin "D+" (uuid "a0000001-0001-0000-0000-000000000004"))
+    (pin "VBUS" (uuid "a0000001-0001-0000-0000-000000000005"))
+    (pin "VBUS" (uuid "a0000001-0001-0000-0000-000000000006"))
+    (pin "CC1" (uuid "a0000001-0001-0000-0000-000000000007"))
+    (pin "CC2" (uuid "a0000001-0001-0000-0000-000000000008"))
+    (pin "SHIELD" (uuid "a0000001-0001-0000-0000-000000000009"))
+  )
+
+  ;; R_CC1: 5.1kΩ pull-down on CC1
+  (symbol (lib_id "Device:R") (at 13.97 38.1 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "a0000002-0000-0000-0000-000000000001")
+    (property "Reference" "R_CC1" (at 13.97 36.068 90) (effects (font (size 1.27 1.27))))
+    (property "Value" "5.1k" (at 13.97 40.132 90) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+  )
+
+  ;; R_CC2: 5.1kΩ pull-down on CC2
+  (symbol (lib_id "Device:R") (at 13.97 43.18 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "a0000003-0000-0000-0000-000000000001")
+    (property "Reference" "R_CC2" (at 13.97 41.148 90) (effects (font (size 1.27 1.27))))
+    (property "Value" "5.1k" (at 13.97 45.212 90) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+  )
+
+  ;; GND power symbols for USB module
+  (symbol (lib_id "power:GND") (at 13.97 55.88 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (uuid "pwr0001-0000-0000-0000-000000000001")
+    (property "Reference" "#PWR01" (at 13.97 55.88 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "GND" (at 13.97 57.785 0) (effects (font (size 1.27 1.27))))
+  )
+  (symbol (lib_id "power:GND") (at 25.4 55.88 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (uuid "pwr0002-0000-0000-0000-000000000001")
+    (property "Reference" "#PWR02" (at 25.4 55.88 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "GND" (at 25.4 57.785 0) (effects (font (size 1.27 1.27))))
+  )
+
+  ;; ── Module B: MT3608 Boost Converter 5V → 9V ──────────────────────────────
+
+  (symbol (lib_id "MT3608") (at 88.9 38.1 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "b0000001-0000-0000-0000-000000000001")
+    (property "Reference" "U2" (at 88.9 30.988 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "MT3608" (at 88.9 29.464 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-6" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "SW" (uuid "b0000001-pin1"))
+    (pin "GND" (uuid "b0000001-pin2"))
+    (pin "FB" (uuid "b0000001-pin3"))
+    (pin "EN" (uuid "b0000001-pin4"))
+    (pin "IN" (uuid "b0000001-pin5"))
+    (pin "NC" (uuid "b0000001-pin6"))
+  )
+
+  ;; L2: 10μH boost inductor
+  (symbol (lib_id "Device:L") (at 71.12 38.1 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "b0000002-0000-0000-0000-000000000001")
+    (property "Reference" "L2" (at 71.12 33.02 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "10uH" (at 71.12 43.18 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Inductor_SMD:L_Bourns_SRR1260" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+  )
+
+  ;; D2: SS14 boost diode
+  (symbol (lib_id "Device:D") (at 96.52 27.94 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "b0000003-0000-0000-0000-000000000001")
+    (property "Reference" "D2" (at 99.06 27.94 90) (effects (font (size 1.27 1.27))))
+    (property "Value" "SS14" (at 93.98 27.94 90) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Diode_SMD:D_SMA" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+  )
+
+  ;; C3: 10μF input capacitor for MT3608
+  (symbol (lib_id "Device:C") (at 71.12 50.8 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "b0000004-0000-0000-0000-000000000001")
+    (property "Reference" "C3" (at 73.66 50.8 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "10uF/25V" (at 73.66 53.34 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+  )
+
+  ;; C4: 22μF output capacitor for MT3608
+  (symbol (lib_id "Device:C") (at 109.22 50.8 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "b0000005-0000-0000-0000-000000000001")
+    (property "Reference" "C4" (at 111.76 50.8 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "22uF/25V" (at 111.76 53.34 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+  )
+
+  ;; R3: 140kΩ feedback top resistor
+  (symbol (lib_id "Device:R") (at 101.6 50.8 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "b0000006-0000-0000-0000-000000000001")
+    (property "Reference" "R3" (at 103.632 50.8 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "140k" (at 99.568 50.8 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+  )
+
+  ;; R4: 10kΩ feedback bottom resistor
+  (symbol (lib_id "Device:R") (at 101.6 62.23 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "b0000007-0000-0000-0000-000000000001")
+    (property "Reference" "R4" (at 103.632 62.23 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "10k" (at 99.568 62.23 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+  )
+
+  ;; GND symbols for boost converter
+  (symbol (lib_id "power:GND") (at 71.12 60.96 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (uuid "pwr0003-0000-0000-0000-000000000001")
+    (property "Reference" "#PWR03" (at 71.12 60.96 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "GND" (at 71.12 62.865 0) (effects (font (size 1.27 1.27))))
+  )
+  (symbol (lib_id "power:GND") (at 88.9 50.8 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (uuid "pwr0004-0000-0000-0000-000000000001")
+    (property "Reference" "#PWR04" (at 88.9 50.8 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "GND" (at 88.9 52.705 0) (effects (font (size 1.27 1.27))))
+  )
+  (symbol (lib_id "power:GND") (at 101.6 73.66 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (uuid "pwr0005-0000-0000-0000-000000000001")
+    (property "Reference" "#PWR05" (at 101.6 73.66 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "GND" (at 101.6 75.565 0) (effects (font (size 1.27 1.27))))
+  )
+  (symbol (lib_id "power:GND") (at 109.22 60.96 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (uuid "pwr0006-0000-0000-0000-000000000001")
+    (property "Reference" "#PWR06" (at 109.22 60.96 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "GND" (at 109.22 62.865 0) (effects (font (size 1.27 1.27))))
+  )
+
+  ;; ── Module C: PT4205 Constant Current Driver ───────────────────────────────
+
+  (symbol (lib_id "PT4205") (at 160.02 38.1 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "c0000001-0000-0000-0000-000000000001")
+    (property "Reference" "U1" (at 160.02 30.988 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "PT4205" (at 160.02 29.464 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-89-5" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "SW" (uuid "c0000001-pin1"))
+    (pin "GND" (uuid "c0000001-pin2"))
+    (pin "DIM" (uuid "c0000001-pin3"))
+    (pin "CSN" (uuid "c0000001-pin4"))
+    (pin "VIN" (uuid "c0000001-pin5"))
+  )
+
+  ;; C1: 220μF input capacitor
+  (symbol (lib_id "Device:C") (at 144.78 50.8 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "c0000002-0000-0000-0000-000000000001")
+    (property "Reference" "C1" (at 147.32 50.8 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "220uF" (at 147.32 53.34 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+  )
+
+  ;; C2: 220μF input capacitor (parallel with C1)
+  (symbol (lib_id "Device:C") (at 152.4 50.8 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "c0000003-0000-0000-0000-000000000001")
+    (property "Reference" "C2" (at 154.94 50.8 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "220uF" (at 154.94 53.34 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+  )
+
+  ;; L1: 47μH inductor
+  (symbol (lib_id "Device:L") (at 144.78 38.1 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "c0000004-0000-0000-0000-000000000001")
+    (property "Reference" "L1" (at 144.78 33.02 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "47uH" (at 144.78 43.18 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Inductor_SMD:L_Bourns_SRR1260" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+  )
+
+  ;; D1: SS14 freewheeling diode (A→L1/SW node, K→VIN/CSN node)
+  (symbol (lib_id "Device:D") (at 160.02 50.8 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "c0000005-0000-0000-0000-000000000001")
+    (property "Reference" "D1" (at 162.56 50.8 90) (effects (font (size 1.27 1.27))))
+    (property "Value" "SS14" (at 157.48 50.8 90) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Diode_SMD:D_SMA" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+  )
+
+  ;; R1: 560mΩ sense resistor
+  (symbol (lib_id "Device:R") (at 177.8 38.1 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "c0000006-0000-0000-0000-000000000001")
+    (property "Reference" "R1" (at 179.832 38.1 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "560m" (at 175.768 38.1 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_2512_6332Metric" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+  )
+
+  ;; R2: 560mΩ sense resistor (parallel with R1)
+  (symbol (lib_id "Device:R") (at 177.8 46.99 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "c0000007-0000-0000-0000-000000000001")
+    (property "Reference" "R2" (at 179.832 46.99 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "560m" (at 175.768 46.99 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_2512_6332Metric" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+  )
+
+  ;; OUT connector
+  (symbol (lib_id "Connector:Conn_01x02_Pin") (at 195.58 38.1 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "c0000008-0000-0000-0000-000000000001")
+    (property "Reference" "J1" (at 195.58 35.306 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "OUT_LED" (at 195.58 33.782 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+  )
+
+  ;; DIM connector
+  (symbol (lib_id "Connector:Conn_01x02_Pin") (at 168.91 27.94 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid "c0000009-0000-0000-0000-000000000001")
+    (property "Reference" "J2" (at 168.91 25.146 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "DIM_CTRL" (at 168.91 23.622 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+  )
+
+  ;; GND symbols for PT4205 module
+  (symbol (lib_id "power:GND") (at 144.78 60.96 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (uuid "pwr0007-0000-0000-0000-000000000001")
+    (property "Reference" "#PWR07" (at 144.78 60.96 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "GND" (at 144.78 62.865 0) (effects (font (size 1.27 1.27))))
+  )
+  (symbol (lib_id "power:GND") (at 152.4 60.96 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (uuid "pwr0008-0000-0000-0000-000000000001")
+    (property "Reference" "#PWR08" (at 152.4 60.96 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "GND" (at 152.4 62.865 0) (effects (font (size 1.27 1.27))))
+  )
+  (symbol (lib_id "power:GND") (at 157.48 65.0 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (uuid "pwr0009-0000-0000-0000-000000000001")
+    (property "Reference" "#PWR09" (at 157.48 65.0 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "GND" (at 157.48 66.905 0) (effects (font (size 1.27 1.27))))
+  )
+  (symbol (lib_id "power:GND") (at 177.8 58.42 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (uuid "pwr0010-0000-0000-0000-000000000001")
+    (property "Reference" "#PWR10" (at 177.8 58.42 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "GND" (at 177.8 60.325 0) (effects (font (size 1.27 1.27))))
+  )
+
+  ;; ── Net Labels ─────────────────────────────────────────────────────────────
+
+  (net_tie_pad_groups "")
+
+  (label "VIN_5V" (at 46.99 38.1 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid "lbl0001-0000-0000-0000-000000000001")
+    (property "Value" "VIN_5V" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+  )
+
+  (label "VIN_5V" (at 63.5 36.83 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid "lbl0002-0000-0000-0000-000000000001")
+    (property "Value" "VIN_5V" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+  )
+
+  (label "VBUS_9V" (at 109.22 27.94 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid "lbl0003-0000-0000-0000-000000000001")
+    (property "Value" "VBUS_9V" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+  )
+
+  (label "VBUS_9V" (at 133.35 38.1 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid "lbl0004-0000-0000-0000-000000000001")
+    (property "Value" "VBUS_9V" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+  )
+
+  (label "SW_PT" (at 144.78 38.1 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "lbl0005-0000-0000-0000-000000000001")
+    (property "Value" "SW_PT" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+  )
+
+  (label "CSN_NODE" (at 177.8 36.83 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid "lbl0006-0000-0000-0000-000000000001")
+    (property "Value" "CSN_NODE" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+  )
+
+  (label "OUT_PLUS" (at 190.5 37.465 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid "lbl0007-0000-0000-0000-000000000001")
+    (property "Value" "OUT+" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+  )
+
+  (label "OUT_MINUS" (at 190.5 38.735 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid "lbl0008-0000-0000-0000-000000000001")
+    (property "Value" "OUT-" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+  )
+
+  ;; ── Wires ──────────────────────────────────────────────────────────────────
+
+  ;; USB VBUS to VIN_5V label
+  (wire (pts (xy 20.32 30.48) (xy 46.99 30.48)) (uuid "w0001"))
+  (wire (pts (xy 46.99 30.48) (xy 46.99 38.1)) (uuid "w0002"))
+
+  ;; CC1 pin → R_CC1 top
+  (wire (pts (xy 20.32 38.1) (xy 17.51 38.1)) (uuid "w0003"))
+  ;; R_CC1 bottom → GND
+  (wire (pts (xy 13.97 41.91) (xy 13.97 55.88)) (uuid "w0004"))
+
+  ;; CC2 pin → R_CC2 top (via orthogonal route)
+  (wire (pts (xy 20.32 36.83) (xy 17.78 36.83) (xy 17.78 43.18)) (uuid "w0005"))
+  ;; R_CC2 bottom → GND (shared with R_CC1 GND node)
+  (wire (pts (xy 10.16 43.18) (xy 10.16 55.88) (xy 13.97 55.88)) (uuid "w0006"))
+
+  ;; USB GND pins to GND symbol
+  (wire (pts (xy 20.32 30.48) (xy 20.32 46.48)) (uuid "w0007"))
+  (wire (pts (xy 20.32 46.48) (xy 25.4 55.88)) (uuid "w0008"))
+
+  ;; SHELL to GND (separate GND symbol to avoid wire collision)
+  (wire (pts (xy 20.32 26.67) (xy 11.43 26.67) (xy 11.43 55.88) (xy 13.97 55.88)) (uuid "w0009"))
+
+  ;; VIN_5V label → L2 pin1 (IN side)
+  (wire (pts (xy 63.5 36.83) (xy 67.31 38.1)) (uuid "w0010"))
+
+  ;; L2 pin2 → MT3608 IN pin5
+  (wire (pts (xy 71.12 34.29) (xy 82.55 36.83)) (uuid "w0011"))
+
+  ;; MT3608 EN pin4 tied to IN pin5 (both on left side of IC, different y)
+  (wire (pts (xy 82.55 39.37) (xy 78.74 39.37) (xy 78.74 36.83) (xy 82.55 36.83)) (uuid "w0012"))
+
+  ;; MT3608 SW pin1 → D2 anode
+  (wire (pts (xy 82.55 39.37) (xy 96.52 39.37) (xy 96.52 30.48)) (uuid "w0013"))
+
+  ;; D2 cathode → VBUS_9V label
+  (wire (pts (xy 96.52 25.4) (xy 109.22 25.4) (xy 109.22 27.94)) (uuid "w0014"))
+
+  ;; MT3608 GND pin2
+  (wire (pts (xy 88.9 43.18) (xy 88.9 50.8)) (uuid "w0015"))
+
+  ;; L2 midpoint to C3
+  (wire (pts (xy 71.12 42.164) (xy 71.12 48.26)) (uuid "w0016"))
+  ;; C3 bottom to GND
+  (wire (pts (xy 71.12 53.34) (xy 71.12 60.96)) (uuid "w0017"))
+
+  ;; VBUS_9V → C4 top
+  (wire (pts (xy 109.22 27.94) (xy 109.22 48.26)) (uuid "w0018"))
+  ;; C4 bottom to GND
+  (wire (pts (xy 109.22 53.34) (xy 109.22 60.96)) (uuid "w0019"))
+
+  ;; VBUS_9V → R3 top
+  (wire (pts (xy 109.22 27.94) (xy 101.6 27.94) (xy 101.6 46.99)) (uuid "w0020"))
+  ;; R3 bottom = FB node → R4 top
+  (wire (pts (xy 101.6 54.61) (xy 101.6 58.42)) (uuid "w0021"))
+  ;; FB node → MT3608 FB pin3
+  (wire (pts (xy 101.6 54.61) (xy 95.25 36.83)) (uuid "w0022"))
+  ;; R4 bottom → GND
+  (wire (pts (xy 101.6 66.04) (xy 101.6 73.66)) (uuid "w0023"))
+
+  ;; VBUS_9V label (module C side) → PT4205 VIN pin5
+  (wire (pts (xy 133.35 38.1) (xy 144.78 36.83) (xy 153.67 36.83)) (uuid "w0024"))
+
+  ;; PT4205 VIN → C1, C2 top
+  (wire (pts (xy 153.67 36.83) (xy 144.78 36.83) (xy 144.78 48.26)) (uuid "w0025"))
+  (wire (pts (xy 153.67 36.83) (xy 152.4 36.83) (xy 152.4 48.26)) (uuid "w0026"))
+
+  ;; C1 bottom → GND
+  (wire (pts (xy 144.78 53.34) (xy 144.78 60.96)) (uuid "w0027"))
+  ;; C2 bottom → GND
+  (wire (pts (xy 152.4 53.34) (xy 152.4 60.96)) (uuid "w0028"))
+
+  ;; PT4205 SW pin1 → L1 pin2
+  (wire (pts (xy 153.67 39.37) (xy 144.78 39.37) (xy 144.78 41.91)) (uuid "w0029"))
+
+  ;; L1 pin1 → OUT- label and D1 anode
+  (wire (pts (xy 144.78 34.29) (xy 144.78 30.48) (xy 160.02 30.48) (xy 160.02 48.26)) (uuid "w0030"))
+
+  ;; D1 cathode → PT4205 CSN pin4 / VBUS_9V
+  (wire (pts (xy 160.02 53.34) (xy 160.02 36.83) (xy 166.37 36.83)) (uuid "w0031"))
+
+  ;; PT4205 GND pin2 → GND (routed left to avoid D1 at x=160.02)
+  (wire (pts (xy 160.02 44.45) (xy 157.48 44.45) (xy 157.48 65.0)) (uuid "w0032"))
+
+  ;; PT4205 CSN → R1, R2 top
+  (wire (pts (xy 166.37 36.83) (xy 177.8 36.83) (xy 177.8 34.29)) (uuid "w0033"))
+  (wire (pts (xy 177.8 34.29) (xy 177.8 43.18)) (uuid "w0034"))
+
+  ;; R1, R2 bottom → GND bus
+  (wire (pts (xy 177.8 41.91) (xy 177.8 55.88)) (uuid "w0035"))
+  (wire (pts (xy 177.8 50.8) (xy 177.8 55.88)) (uuid "w0036"))
+  (wire (pts (xy 177.8 55.88) (xy 177.8 58.42)) (uuid "w0037"))
+
+  ;; OUT+ connector (J1 pin1) → VBUS_9V side
+  (wire (pts (xy 191.77 37.465) (xy 190.5 37.465)) (uuid "w0038"))
+
+  ;; OUT- connector (J1 pin2) → SW/L1 node
+  (wire (pts (xy 191.77 38.735) (xy 190.5 38.735)) (uuid "w0039"))
+
+  ;; PT4205 DIM pin3 → J2 connector
+  (wire (pts (xy 166.37 36.83) (xy 166.37 27.94) (xy 165.1 27.94)) (uuid "w0040"))
+
+  ;; J2 pin2 → GND
+  (wire (pts (xy 165.1 27.305) (xy 165.1 34.29) (xy 160.02 34.29)) (uuid "w0041"))
+
+)
